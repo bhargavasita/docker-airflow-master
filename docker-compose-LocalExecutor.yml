@@ -26,8 +26,8 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             # - ./plugins:/usr/local/airflow/plugins
-            - ./input:/usr/local/airflow/Input files
-            - ./input:/usr/local/airflow/Output files
+            - ./input:/usr/local/docker-airflow-master/input
+            - ./output:/usr/local/airflow/output
         ports:
             - "8080:8080"
         command: webserver
